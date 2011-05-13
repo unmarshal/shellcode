@@ -1,0 +1,17 @@
+A collection of shellcodes for writing exploits.
+Assembly code intel syntax. Use nasm assemble them.
+
+This might be old, but I spent a long time optimizing this code for size.
+
+BSD:
+  - execve: call execve system call to execute any command
+  - setuid: call setuid system call to set the user id
+
+Linux:
+  - execve
+  - setuid
+  - chroot: bust out of chroot jails. this only worked on older kernels
+  - new_chroot: this used a novel technique to break out of chroot jails on 2.6.0 kernels
+
+- Marshall Beddoe (unmarshal@gmail.com)
+  Written around 1999 to 2003..
